@@ -57,7 +57,7 @@
         window.onkeypress = window.onkeyup = window.onkeydown = this.handleKeyboardEvent
       },
       initSocketIO () {
-        var socket = this.socket = io('http://' + 'localhost' + ':3000')
+        var socket = this.socket = io('http://' + this.ip + ':3000')
         socket.on('msg', (msg) => {
           console.log(msg)
         })
