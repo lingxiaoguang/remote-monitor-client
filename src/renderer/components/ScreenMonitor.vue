@@ -7,6 +7,8 @@
         @mousedown="handleMouseEvent"
         @mousemove="handleMouseEvent" 
         @mouseup="handleMouseEvent"
+        @click="handleMouseEvent"
+        @dblclick="handleMouseEvent"   
     />
     <el-dialog title="服务端IP" :visible.sync="dialogFormVisible">
       <el-input v-model="ip" autocomplete="off" placeholder="localhost"></el-input>
