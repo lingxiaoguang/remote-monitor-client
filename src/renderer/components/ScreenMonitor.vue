@@ -8,8 +8,8 @@
         @mousemove="handleMouseEvent" 
         @mouseup="handleMouseEvent"
     />
-    <el-dialog title="收货地址" :visible.sync="dialogFormVisible">
-      <el-input v-model="ip" autocomplete="off"></el-input>
+    <el-dialog title="服务端IP" :visible.sync="dialogFormVisible">
+      <el-input v-model="ip" autocomplete="off" placeholder="localhost"></el-input>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>
         <el-button type="primary" @click="confirmChangeIp">确 定</el-button>

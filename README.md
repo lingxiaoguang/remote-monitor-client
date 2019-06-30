@@ -1,28 +1,23 @@
-# my-project
+# 远程桌面监控客户端
 
-> An electron-vue project
+远程桌面监控客户端，通过socketio连接远程服务端，来实现实时监控，同时可以控制远程桌面
 
-#### Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:9080
-npm run dev
-
-# build electron application for production
-npm run build
-
-# run unit & end-to-end tests
-npm test
+![1](./case1.png)
+![2](./case2.png)
 
 
-# lint all JS/Vue component files in `src/`
-npm run lint
+## 原理
+
+ - 远程桌面监控：通过socketio传送一帧帧的图片base64字符串过来，通过改变img的src来实现监控
+ - 控制：监控keydown、keyup、keypress、mousedown、mousemove、mouseup、click等事件，传送到服务端来执行
+
+## 调试
+
+首先启动[服务端](https://github.com/lingxiaoguang/remote-monitor-server)，然后 `yarn dev` 即可调试
+
+## 打包
 
 ```
+yarn build
+```
 
----
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[8fae476](https://github.com/SimulatedGREG/electron-vue/tree/8fae4763e9d225d3691b627e83b9e09b56f6c935) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
