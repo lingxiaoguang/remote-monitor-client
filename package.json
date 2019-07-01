@@ -18,7 +18,7 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "远程监控桌面端",
+    "productName": "remote-monitor-client",
     "appId": "com.zxgweb.remote-monitor",
     "directories": {
       "output": "build"
