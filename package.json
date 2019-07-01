@@ -18,8 +18,8 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "my-project",
-    "appId": "com.example.yourapp",
+    "productName": "远程监控桌面端",
+    "appId": "com.zxgweb.remote-monitor",
     "directories": {
       "output": "build"
     },
