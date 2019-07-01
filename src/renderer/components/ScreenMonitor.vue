@@ -8,9 +8,13 @@
         @mousemove="handleMouseEvent" 
         @mouseup="handleMouseEvent"
         @click="handleMouseEvent"
-        @dblclick="handleMouseEvent"   
+        @dblclick="handleMouseEvent" 
     />
-    <el-dialog title="服务端IP" :visible.sync="dialogFormVisible">
+    <el-dialog 
+        title="服务端IP" 
+        :visible.sync="dialogFormVisible" 
+        :close-on-click-modal="false"
+        :close-on-press-escape="false">
       <el-input v-model="ip" autocomplete="off" placeholder="localhost"></el-input>
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">取 消</el-button>
