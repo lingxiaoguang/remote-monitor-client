@@ -11,6 +11,8 @@
  - 远程桌面监控：通过socketio传送一帧帧的图片base64字符串过来，通过改变img的src来实现监控
  - 控制：监控keydown、keyup、keypress、mousedown、mousemove、mouseup、click等事件，传送到服务端来执行
 
+ 详细细节见[Node.js实现远程桌面监控](https://juejin.im/post/5d18d4c36fb9a07ecb0bbe7b)
+
 ## 调试
 
 首先启动[服务端](https://github.com/lingxiaoguang/remote-monitor-server)，然后 `yarn dev` 即可调试
