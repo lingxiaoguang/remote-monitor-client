@@ -6,6 +6,7 @@
 
 ![1](case1.png)
 ![2](case2.png)
+![](./remote-monitor.gif)
 
 # 安装 和 运行
 
