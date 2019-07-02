@@ -1,11 +1,10 @@
-# Remote Desktop Monitor Client
+# 远程桌面监控客户端
 
-Language: [中文](README_zh.md) / [English](README.md)
+语言: [中文](README_zh.md) / [English](README.md)
 
-Remote Desktop Monitor Client
+远程桌面监控客户端
 
-First, start the server.Then, input the ip and port in [client](https://github.com/lingxiaoguang/remote-monitor-client)
-and now you can monitor and operate the desktop of server.
+启动[服务端](https://github.com/lingxiaoguang/remote-monitor-server)后，客户端输入ip和端口号，就可以操纵服务端的桌面。
 
 ![](./remote-monitor.gif)
 ![1](case1.png)
