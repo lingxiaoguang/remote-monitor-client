@@ -11,27 +11,27 @@ and now you can monitor and operate the desktop of server.
 ![1](case1.png)
 ![2](case2.png)
 
-# 安装 和 运行
+# Installation And Run
 
-有两种方式，一种为网页，一种为electron应用，推荐网页的方式
+There are two ways. One is web app, the other is electron app.( web page is recommened)
 
-#### 网页的方式:
+#### web page
 
 ```
 yarn global add remote-monitor-client-web
 
 remote-monitor-client-web 
 ```
-#### electron应用的方式
+#### electron app
 
-首先下载项目，然后
+First, download the project 
+Then, 
 ```
 npm run build
 ```
-之后安装对应的安装包即可（目前只支持mac）
+After, run the install package. (Only support mac now)
 
-
-# 原理
+# Implemetion
 
 [Node.js实现远程桌面监控](https://juejin.im/post/5d18d4c36fb9a07ecb0bbe7b)
 
