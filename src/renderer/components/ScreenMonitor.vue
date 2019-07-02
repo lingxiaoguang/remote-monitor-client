@@ -54,13 +54,13 @@
           event: {
             type: e.type,
             buttonType: e.buttons === 2 ? 'right' : 'left',
-            x: e.clientX,
-            y: e.clientY
+            x: e.offsetX,
+            y: e.offsetY
           }
         })
       },
       initKeyboardEvent () {
-        window.onkeypress = window.onkeyup = window.onkeydown = this.handleKeyboardEvent
+        window.onkeyup = window.onkeydown = this.handleKeyboardEvent
       },
       initSocketIO () {
         let socket = this.socket = io('http://' + this.ipAndPort)
